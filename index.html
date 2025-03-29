@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleiton Neves - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Optional inline styles for demonstration */
+    .content-section { display: none; }
+    .content-section.active { display: block; }
+    .nav-item.active { font-weight: bold; }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <button id="theme-toggle" class="theme-btn">🌓</button>
+
+  <header class="profile-header">
+    <img src="images/avatar.jpg" alt="Cleiton Neves" class="avatar">
+    <h1>Cleiton Neves</h1>
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-cloud"></i></a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <nav class="main-nav">
+      <ul>
+        <!-- <li><a href="#" class="nav-item active" data-target="about">About</a></li> -->
+        <li><a href="#" class="nav-item" data-target="research">Research</a></li>
+        <li><a href="#" class="nav-item" data-target="professional">Professional</a></li>
+        <li><a href="art.html" class="nav-item">Art</a></li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <!-- About Section -->
+      <section id="about" class="content-section-fixed active">
+        <div class="section-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="section-content">
+          <p class="preview">I like to travel, buy more books than read, and watch superheroes and horror movies...</p>
+          <div class="full-content">
+            <p>Full content here...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Section -->
+      <section id="research" class="content-section">
+        <div class="section-header">
+          <h2>Research Interests</h2>
+        </div>
+        <div class="section-content">
+          <p class="preview">Fairness and Bias in AI, Ethics & Trustworthy AI...</p>
+          <div class="full-content">
+            <p>Full research content...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Section -->
+      <section id="professional" class="content-section">
+        <div class="section-header">
+          <h2>Professional Background</h2>
+        </div>
+        <div class="section-content">
+          <p class="preview">AI Engineer at IBM Research since 2021...</p>
+          <div class="full-content">
+            <p>Full professional content...</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Load theme/particles logic -->
+  <script src="js/theme.js"></script>
+  <!-- Load navigation and toggle logic -->
+  <script src="js/navigation.js"></script>
+</body>
+</html>

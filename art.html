@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleiton Neves - Art</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <button id="theme-toggle" class="theme-btn">🌓</button>
+
+  <header class="profile-header">
+    <img src="images/avatar.jpg" alt="Cleiton Neves" class="avatar">
+    <h1>Cleiton Neves</h1>
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-cloud"></i></a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Navigation tabs -->
+    <nav class="main-nav">
+      <ul>
+        <!-- These links redirect to index.html with a query parameter so the proper tab is toggled -->
+        <li><a href="index.html?tab=about" class="nav-item" data-target="about">About</a></li>
+        <li><a href="index.html?tab=research" class="nav-item" data-target="research">Research</a></li>
+        <li><a href="index.html?tab=professional" class="nav-item" data-target="professional">Professional</a></li>
+        <!-- Art tab remains on this page -->
+        <!-- <li><a href="art.html" class="nav-item active" data-target="art">Art</a></li> -->
+      </ul>
+    </nav>
+    <!-- Art content here -->
+    <section class="art-content">
+      <h2>My Art Collection</h2>
+      <p>Here you can find my artworks, sketches, and experiments with digital art.</p>
+      <!-- Additional art content goes here -->
+    </section>
+  </main>
+
+  <script src="js/theme.js"></script>
+  <!-- Load navigation and toggle logic -->
+  <script src="js/navigation.js"></script>
+</body>
+</html>

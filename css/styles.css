@@ -1,0 +1,318 @@
+:root {
+    /* Dark Theme */
+    --primary: #e6f1ff;
+    --secondary: #3498db;
+    --bg: #0a192f;
+    --card-bg: #172a45;
+    --border: #2c3e50;
+    --transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+    --max-width: 1200px;
+    --header-height: 80px;
+    --opacity: 0.15;
+}
+
+[data-theme="light"] {
+    --primary: #2c3e50;
+    --secondary: #04d9ff;
+    --bg: #ffffff;
+    --card-bg: #E6ECF5;
+    --border: #dfe6e9;
+    --opacity: 0.65;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--primary);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    transition: background var(--transition), color var(--transition);
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+/* Profile Header */
+.profile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid var(--border);
+    background: var(--card-bg);
+    z-index: 10;
+    font-size: 0.8rem;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--secondary);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 10%;
+    vertical-align: top;
+}
+
+.social-links a {
+    color: var(--primary);
+    font-size: 1.5rem;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+    transform: scale(1.1);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 3rem;
+    min-height: 100vh;
+    transition: margin var(--transition), padding var(--transition);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.nav-item {
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    transition: all var(--transition);
+    border: 2px solid transparent;
+    border-color: var(--primary);
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.nav-item.active {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+/* Sections */
+.content-section-fixed {
+    display: none;
+    max-width: 800px;
+    margin: 5% auto;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.content-section-fixed.active {
+    display: block;
+    animation: fadeIn var(--transition) forwards;
+}
+
+.content-section {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeIn var(--transition) forwards;
+}
+
+.content-section.fade-out {
+    animation: fadeOut var(--transition) forwards;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.section-header:hover {
+    background: var(--secondary);
+    color: var(--bg);
+}
+
+.expand-toggle {
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform var(--transition);
+}
+
+.preview {
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.full-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    transition: all var(--transition);
+}
+
+.content-section.active .full-content {
+    max-height: 1000px;
+    padding: 0 1.5rem 2rem;
+}
+
+.content-section.active .expand-toggle {
+    transform: rotate(180deg);
+}
+
+/* Theme Toggle */
+.theme-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Particles */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: var(--opacity);
+}
+
+/* Keyframes for fade animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 2rem;
+        margin-left: 280px;
+    }
+    .profile-header {
+        width: 240px;
+        padding: 1.5rem;
+    }
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+    .social-links a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Convert fixed sidebar to a top header */
+    .profile-header {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem 1.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        background: var(--card-bg);
+    }
+    .avatar {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+    .social-links {
+        display: none; /* Hide social icons on small screens (or reposition as needed) */
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+        padding-top: 80px; /* Give some space for the fixed header */
+    }
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .nav-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .nav-item {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .main-content {
+        padding: 0.5rem;
+    }
+}
