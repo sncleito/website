@@ -356,13 +356,17 @@ body {
   }
   
   .skill-icons {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 1rem;
     padding: 1rem;
+    place-items: center;
   }
   
+  
   .skill-item {
+    place-items: center;
     text-align: center;
     padding: 1rem;
     border-radius: 8px;
@@ -383,3 +387,57 @@ body {
     display: block;
     font-size: 0.9rem;
   }
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* This sets the width for one image at a time */
+    margin: 2rem auto;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+  }
+  
+  /* Carousel Images Wrapper */
+  .carousel-images {
+    display: flex;
+    transition: transform var(--transition);
+  }
+  
+  /* Individual Images: Force all images to the same width */
+  .carousel-images img {
+    width: 100%;         /* Each image takes the full width of the carousel container */
+    flex-shrink: 0;      /* Prevent images from shrinking */
+    object-fit: cover;   /* Optional: ensure images fill the area without distortion */
+  }
+  
+  /* Navigation Buttons */
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
