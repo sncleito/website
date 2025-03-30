@@ -175,23 +175,16 @@ body {
     background: none;
     border: none;
     color: var(--secondary);
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: transform var(--transition);
 }
 
-.preview {
+.full-content {
+    max-height: 1;
     padding: 0 1.5rem;
     margin: 1rem 0;
     display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.full-content {
-    max-height: 0;
     overflow: hidden;
     padding: 0 1.5rem;
     transition: all var(--transition);
@@ -200,10 +193,6 @@ body {
 .content-section.active .full-content {
     max-height: 1000px;
     padding: 0 1.5rem 2rem;
-}
-
-.content-section.active .expand-toggle {
-    transform: rotate(180deg);
 }
 
 /* Theme Toggle */
@@ -316,3 +305,81 @@ body {
         padding: 0.5rem;
     }
 }
+
+/* New styles for research topics */
+.topic {
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+  }
+  
+  .topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: none;
+    cursor: pointer;
+    transition: background var(--transition);
+  }
+
+  .topic-header.active {
+    color: var(--secondary);
+  }
+
+  .topic-header:hover {
+    background: var(--secondary);
+    color: var(--bg);
+    
+  }
+  
+  .topic-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: max-height var(--transition), padding var(--transition);
+  }
+  
+  .topic-content.active {
+    max-height: 1000px; /* Adjust if necessary */
+    padding: 1rem 1rem 1rem;
+  }
+  
+  /* Optionally rotate the toggle icon when active */
+  .topic-header.active .expand-toggle {
+    transform: rotate(180deg);
+  }
+
+  .video-container {
+    text-align: center; /* Optional: centers the content if needed */
+  }
+  
+  .skill-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .skill-item {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-3px);
+    background: var(--card-bg)
+  }
+  
+  .skill-item i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-item span {
+    display: block;
+    font-size: 0.9rem;
+  }

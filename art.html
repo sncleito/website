@@ -28,19 +28,64 @@
     <nav class="main-nav">
       <ul>
         <!-- These links redirect to index.html with a query parameter so the proper tab is toggled -->
-        <li><a href="index.html?tab=about" class="nav-item" data-target="about">About</a></li>
-        <li><a href="index.html?tab=research" class="nav-item" data-target="research">Research</a></li>
-        <li><a href="index.html?tab=professional" class="nav-item" data-target="professional">Professional</a></li>
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="#" class="nav-item" data-target="art">Art</a></li>
+        <li><a href="#" class="nav-item" data-target="sports">Sports</a></li>
         <!-- Art tab remains on this page -->
         <!-- <li><a href="art.html" class="nav-item active" data-target="art">Art</a></li> -->
       </ul>
     </nav>
-    <!-- Art content here -->
-    <section class="art-content">
-      <h2>My Art Collection</h2>
-      <p>Here you can find my artworks, sketches, and experiments with digital art.</p>
-      <!-- Additional art content goes here -->
+
+    <!-- Art section -->
+    <section id="art" class="content-section">
+      <div class="section-header">
+        <h2>Current Research</h2>
+      </div>
+      <div class="section-content">
+        <!-- Topic 2: Digital Drawing -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Digital Drawing</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <div class="skill-item">
+              <a href="https://sncleiton.github.io/ai-reversi/" target="_blank"><i class="fa-brands fa-react"></i></a>
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <img src="images/sonic.png" alt="Description of Image" width="60" height="auto">
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 1: Visão Computacional -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Computer Vision</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <h5>Computer Vision solution to construction site (2023-today)</h5>
+            <p>
+              The Multiview System enables the monitoring of construction and manufacturing 
+              processes on industrial sites using computer vision. This project focuses on 
+              investigating techniques, models, and algorithms to develop a system for the 
+              automatic semantic labeling of elements identified in point clouds. It aims to 
+              create innovative solutions for point cloud analysis.
+              <a href="https://www.verlab.dcc.ufmg.br/multiview-identification-and-tracking/" class="fa fa-link" target="_blank"></a>
+              <br>
+              <i>
+                <br> Funding: Petrobras (Brazil). <br>
+                Local: DCC - UFMG (Brazil).
+              </i>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+
+
   </main>
 
   <script src="js/theme.js"></script>

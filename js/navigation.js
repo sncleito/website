@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             section.classList.add('fade-out');
             setTimeout(() => {
               section.classList.remove('active', 'fade-out');
-            }, 400); // matches our animation duration
+            }, 350); // matches our animation duration
           }
         });
   
@@ -45,5 +45,29 @@ document.addEventListener('DOMContentLoaded', () => {
         defaultNavItem.click();
       }
     }
+    // Add event listeners for research topics
+    const topicHeaders = document.querySelectorAll('.topic-header');
+    topicHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        // Get the content area for the clicked topic
+        const content = header.nextElementSibling;
+
+        // Close all other content areas and remove 'active' class from headers
+        topicHeaders.forEach(otherHeader => {
+          const otherContent = otherHeader.nextElementSibling;
+          if (otherHeader !== header) {
+            otherContent.classList.remove('active');
+            otherHeader.classList.remove('active');
+          }
+        });
+
+        setTimeout(() => {
+          // Toggle the 'active' class for the clicked topic
+          content.classList.toggle('active');
+          header.classList.toggle('active');
+        }, 500); // matches our animation duration
+      });
+    });
+
   });
   

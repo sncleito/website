@@ -69,4 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the theme and particles on page load.
     setTheme(currentTheme === 'dark');
   });
-  
