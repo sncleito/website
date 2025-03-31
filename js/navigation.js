@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.carousel-images img');
   const prevButton = document.querySelector('.carousel-prev');
   const nextButton = document.querySelector('.carousel-next');
+
   let currentIndex = 0;
   const totalImages = images.length;
 
@@ -91,7 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     updateCarousel();
   });
-
-
 });
   

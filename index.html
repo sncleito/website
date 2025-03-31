@@ -8,18 +8,6 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
-  <style>
-    /* Optional inline styles for demonstration */
-    .content-section { display: none; }
-    .content-section.active { display: block; }
-    .nav-item.active { font-weight: bold; }
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -39,28 +27,27 @@
   <main class="main-content">
     <nav class="main-nav">
       <ul>
-        <li><a href="#" class="nav-item" data-target="about">About</a></li>
+        <li><a href="#" class="nav-item active" data-target="about">About</a></li>
         <li><a href="#" class="nav-item" data-target="research">Research</a></li>
         <li><a href="#" class="nav-item" data-target="professional">Professional</a></li>
-        <li><a href="art.html" class="nav-item">Other interests</a></li>
+        <li><a href="#" class="nav-item active" data-target="art">Art</a></li>
+        <li><a href="#" class="nav-item" data-target="sports">Sports</a></li>
       </ul>
     </nav>
 
     <div class="content-container">
       <!-- About Section -->
-      <section id="about" class="content-section active">
+      <section id="about" class="content-section">
         <div class="section-header">
           <h2>About Me</h2>
         </div>
         <div class="full-content">
-          <p>I am currently pursuing a Master’s degree in Computer Science at the Federal University of Minas Gerais (UFMG),
-             where my research at the Vision and Robotics Laboratory (VeRLab) focuses on collaborative perimeter defense 
-             strategies under the supervision of Professor Douglas Guimarães Macharet. I earned a specialization in 
-             Artificial Intelligence and Machine Learning from the Pontifícia Universidade Católica de Minas Gerais (PUC Minas), 
-             with a thesis titled "Prioritizing Individuals for COVID-19 Testing Under Resource Scarcity," advised by Professor 
-             Luiz Alberto Ferreira Gomes. During my undergraduate studies in Computational Mathematics at UFMG, I developed a 
-             solid foundation in analytical and computational problem-solving skills. My research interests span 
-             autonomous agents, multi-robot systems, dynamic vehicle routing, and combinatorial optimization.
+          <p>
+            I'm a Computer Science graduate student at UFMG researching multi-robot perimeter defense strategies at VeRLab, 
+            with a specialization in AI/Machine Learning from PUC Minas focused on resource optimization during health crises. 
+            My technical expertise spans full-stack development (Laravel/JHipster), robotics (ROS/Gazebo), and data science (Python/Pandas). 
+            When not optimizing systems or defending virtual perimeters, I channel creativity through digital art and strategic thinking through chess, 
+            while maintaining a healthy balance through team sports like futsal and volleyball.
           </p>
         </div>
       </section>
@@ -125,6 +112,20 @@
               </p>
             </div>
           </div>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <img src="images/verlab.png" width="64" height="auto" alt="Pixiv">
+                <a href="https://www.verlab.dcc.ufmg.br/meet-our-team/" target="_blank">
+                  <span>VeRlab</span>
+                </a>
+              </div>
+              <div class="skill-item">
+                <img src="images/dccufmg.png" width="64" height="auto" alt="Pixiv">
+                <a href="https://dcc.ufmg.br/" target="_blank">
+                  <span>DCC-UFMG</span>
+                </a>
+              </div>
+            </div>
         </div>
       </section>
       
@@ -342,6 +343,249 @@
         </div>
       </section>
     </div>
+
+
+    <!-- Art section -->
+    <section id="art" class="content-section">
+      <div class="section-header">
+        <h2>Artistic Endeavors & Appreciation</h2>
+      </div>
+      <div class="section-content">
+        <!-- Topic 2: Digital Drawing -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Digital Drawing</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              I have been sporadically drawing digitally since 2014. I started with a Wacom Bamboo 
+              tablet and later switched to a Wacom Intuos. I use Krita 
+              for most of my drawings, but I also use Gimp for some 
+              projects. I have been focusing on character design and fan art, but I also 
+              enjoy drawing original characters and concepts.
+            </p>
+            <div class="carousel">
+              <div class="carousel-images">
+                <img src="images/random.png" alt="Image 3">
+                <img src="images/sonic.png" alt="Image 1">
+                <img src="images/robot.png" alt="Image 2">
+                <img src="images/roll.png" alt="Image 4">
+                <img src="images/tangle.png" alt="Image 5">
+                <img src="images/vic.png" alt="Image 3">
+                <img src="images/ragna.png" alt="Image 3">
+              </div>
+              <button class="carousel-prev">&#10094;</button>
+              <button class="carousel-next">&#10095;</button>
+            </div>
+            <div class="skill-icons">
+              <p> Social Networks: </p>
+              <div class="skill-item">
+                <i class="fa-brands fa-artstation"></i>
+                <a href="https://cdash.artstation.com/" target="_blank">
+                  <span>Artstation</span>
+                </a>
+              </div>
+
+              <div class="skill-item">
+                <i class="fa-brands fa-deviantart"></i>
+                <a href="https://www.deviantart.com/cd4sh/gallery/all" target="_blank">
+                  <span>Deviantart</span>
+                </a>
+              </div>
+
+              <div class="skill-item">
+                <img src="images/icons/pixiv.svg" width="36" height="36" alt="Pixiv">
+                <a href="https://www.pixiv.net/en/users/17149078" target="_blank">
+                  <span>Pixiv</span>
+                </a>
+              </div>
+            </div>
+            <div class="skill-icons">
+              <p> Tools: </p>
+
+              <div class="skill-item">
+                <i class="fas fa-tablet"></i>
+                <span>Wacom</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="images/icons/krita.svg" width="36" height="36" alt="Krita">
+                <a href="https://krita.org/" target="_blank">
+                  <span>Gimp</span>
+                </a>
+              </div>
+
+              <div class="skill-item">
+                <img src="images/icons/gimp.svg" width="36" height="36" alt="Gimp">
+                <a href="https://www.gimp.org/" target="_blank">
+                  <span>Gimp</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 1: Música -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Music Appreciation</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              Although I've learned the basics of acoustic guitar, I'm not a musician; I believe that music is an important part of life.
+            </p>
+            <div class="skill-icons">
+              <p> Social Networks: </p>
+
+              <div class="skill-item">
+                <i class="fa-brands fa-lastfm"></i>
+                <a href="https://www.last.fm/user/sncleiton" target="_blank">
+                  <span>last.fm</span>
+                </a>
+              </div>
+
+              <div class="skill-item">
+                <i class="fa-brands fa-spotify"></i>
+                <a href="https://open.spotify.com/user/31maeet3kw5mo4xsazluyr3hvccy/" target="_blank">
+                  <span>Spotify</span>
+                </a>
+              </div>
+
+              <figure class="video-container">
+                <img src="images/guitar.png"  width="200" height='auto' alt="Special participation in ADA">
+              </figure>
+            </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Art section -->
+    <section id="sports" class="content-section">
+      <div class="section-header">
+        <h2>Physical Activity & Sports</h2>
+      </div>
+      <div class="section-content">
+        <!-- Topic 2: Futsal -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Futsal</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              I'm part of the powerfull futsal team known as Fibonapoli φ(c). Partaking in the very competitive DCC league, 
+              we have never been able to win the championship but it's fun to play.
+              I'm the team's second goalkeeper and also outfield player.
+            </p>
+            <figure class="video-container">
+              <img src="images/sports/fibo.jpg"  width="330" height='auto' alt="Special participation in ADA">
+              <img src="images/sports/ada.jpg" width="300" height='auto' alt="Fibo-ADA Derby">
+            </figure>
+            <div class="skill-icons">
+              <p> Social Networks: </p>
+              <div class="skill-item">
+                <img src="images/sports/escudo.png" width="36" height="36" alt="Fibo">
+                <a href="https://www.instagram.com/fibo.napoli/" target="_blank">
+                  <span>Fibonapoli φ(c)</span>
+                </a>
+              </div>
+
+              <div class="skill-item">
+                <img src="images/sports/dcc.png" width="36" height="36" alt="DCC">
+                <a href="https://www.instagram.com/campeonatodcc/" target="_blank">
+                  <span>Campeonato</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Topic 1: Voleyball -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Volleyball</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              I sporadically play very low performance volleyball with my friends from MatComp, the infamous 'MatVôlei'.
+              I enjoy the sport because it is a great way to socialize.
+            </p>
+            <figure class="video-container">
+              <img src="images/sports/matvolei.jpg"  width="300" height='auto' alt="Special participation in ADA">
+              <img src="images/sports/volei.jpg" width="300" height='auto' alt="Fibo-ADA Derby">
+            </figure>
+            <div class="skill-icons">
+              <p> Social Network: </p>
+              <div class="skill-item">
+                <img src="images/matcomp.png" width="36" height="36" alt="Fibo">
+                <a href="https://www.instagram.com/matcomp/" target="_blank">
+                  <span>MatComp</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 0: Gym -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Gym</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              I try to maintain a healthy lifestyle by going to the gym regularly. A healthy body is a healthy mind.
+            </p>
+            <div class="skill-icons">
+              <p> Social Network: </p>
+              <div class="skill-item">
+                <img src="images/sports/gymrats.png" width="36" height="36" alt="Fibo">
+                <a href="https://www.gymrats.app/" target="_blank">
+                  <span>GymRats</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 4: Chess -->
+        <div class="topic">
+          <div class="topic-header">
+            <h4>Chess</h4>
+            <button class="expand-toggle">▼</button>
+          </div>
+          <div class="topic-content">
+            <p>
+              I'm a chess hobbyist. I enjoy solving chess puzzles and playing casual games with friends sometimes.
+            </p>
+            <div class="skill-icons">
+              <p> Social Networks: </p>
+              <div class="skill-item">
+                <img src="images/icons/lichess.svg" width="64" height="64" alt="Lichess">
+                <a href="https://lichess.org/@/Cdash/" target="_blank">
+                  <span>Lichess</span>
+                </a>
+              </div>
+              <div class="skill-item">
+                <img src="images/icons/chesscom.svg" width="60" height="60" alt="Chess.com">
+                <a href="https://www.chess.com/member/cd4sh/" target="_blank">
+                  <span>Chess.com</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>    
+
+
   </main>
 
   <!-- Load theme/particles logic -->
