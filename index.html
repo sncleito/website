@@ -16,11 +16,21 @@
   <header class="profile-header">
     <img src="images/avatar.jpg" alt="Cleiton Neves" class="avatar">
     <h1>Cleiton Neves</h1>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/sncleiton/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="http://lattes.cnpq.br/4637438167486690" target="_blank"><i class="ai ai-lattes"></i></a>
-      <a href="https://github.com/sncleiton" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.youtube.com/@sncleiton" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sncleiton/" data-text="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="http://lattes.cnpq.br/4637438167486690" data-text="Lattes" target="_blank"><i class="ai ai-lattes"></i></a>
+        <a href="https://github.com/sncleiton/" data-text="Github" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@sncleiton" data-text="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://open.spotify.com/user/31maeet3kw5mo4xsazluyr3hvccy/" data-text="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://www.last.fm/user/sncleiton/" data-text="Last.fm" target="_blank"><i class="fa-brands fa-lastfm"></i></a>
+        <a href="https://www.skoob.com.br/perfil/sncleiton/" data-text="Skoob" target="_blank"><i class="fa-solid fa-book"></i></a>
+        <a href="https://bsky.app/profile/cleitons.bsky.social/" data-text="BlueSky" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+
+
     </div>
   </header>
 
@@ -29,7 +39,7 @@
       <ul>
         <li><a href="#" class="nav-item active" data-target="about">About</a></li>
         <li><a href="#" class="nav-item" data-target="research">Research</a></li>
-        <li><a href="#" class="nav-item" data-target="professional">Professional</a></li>
+        <li><a href="#" class="nav-item" data-target="technical">Skills</a></li>
         <li><a href="#" class="nav-item" data-target="hobbies">Hobbies</a></li>
       </ul>
     </nav>
@@ -42,11 +52,9 @@
         </div>
         <div class="full-content">
           <p>
-            I'm a Computer Science graduate student at UFMG researching multi-robot perimeter defense strategies at VeRLab, 
-            with a specialization in AI/Machine Learning from PUC Minas focused on resource optimization during health crises. 
-            My technical expertise spans full-stack development (Laravel/JHipster), robotics (ROS/Gazebo), and data science (Python/Pandas). 
-            When not optimizing systems or defending virtual perimeters, I channel creativity through digital art and strategic thinking through chess, 
-            while maintaining a healthy balance through team sports like futsal and volleyball.
+            I'm a Computer Science graduate student at UFMG researching multi-robot perimeter defense at VeRLab DCC-UFMG.
+            Skilled in full-stack development, robotics, and data science. Passionate about digital art, chess, and team 
+            sports like futsal and volleyball.
           </p>
         </div>
       </section>
@@ -129,7 +137,7 @@
       </section>
       
 
-      <section id="professional" class="content-section">
+      <section id="technical" class="content-section">
         <div class="section-header">
           <h2>Technical Skills</h2>
         </div>
@@ -346,7 +354,7 @@
     <!-- Hobby section -->
     <section id="hobbies" class="content-section">
       <div class="section-header">
-        <h2>Physical Activity & Sports</h2>
+        <h2>Arts & Sports</h2>
       </div>
       <div class="section-content">
         <!-- Topic 2: Digital Drawing -->
@@ -366,10 +374,10 @@
             <div class="carousel">
               <div class="carousel-images">
                 <img src="images/random.png" alt="Image 3">
-                <img src="images/sonic.png" alt="Image 1">
-                <img src="images/robot.png" alt="Image 2">
                 <img src="images/roll.png" alt="Image 4">
                 <img src="images/tangle.png" alt="Image 5">
+                <img src="images/robot.png" alt="Image 2">
+                <img src="images/sonic.png" alt="Image 1">
                 <img src="images/vic.png" alt="Image 3">
                 <img src="images/ragna.png" alt="Image 3">
               </div>
@@ -424,39 +432,6 @@
             </div>
           </div>
         </div>
-        <!-- Topic 1: Música -->
-        <div class="topic">
-          <div class="topic-header">
-            <h4>Music Appreciation</h4>
-            <button class="expand-toggle">▼</button>
-          </div>
-          <div class="topic-content">
-            <p>
-              Although I've learned the basics of acoustic guitar, I'm not a musician; I believe that music is an important part of life.
-            </p>
-            <div class="skill-icons">
-              <p> Social Networks: </p>
-
-              <div class="skill-item">
-                <i class="fa-brands fa-lastfm"></i>
-                <a href="https://www.last.fm/user/sncleiton" target="_blank">
-                  <span>last.fm</span>
-                </a>
-              </div>
-
-              <div class="skill-item">
-                <i class="fa-brands fa-spotify"></i>
-                <a href="https://open.spotify.com/user/31maeet3kw5mo4xsazluyr3hvccy/" target="_blank">
-                  <span>Spotify</span>
-                </a>
-              </div>
-
-              <figure class="video-container">
-                <img src="images/guitar.png"  width="200" height='auto' alt="Special participation in ADA">
-              </figure>
-            </div>
-          </div>
-        </div>
         <!-- Topic 2: Futsal -->
         <div class="topic">
           <div class="topic-header">
@@ -469,10 +444,6 @@
               we have never been able to win the championship but it's fun to play.
               I'm the team's second goalkeeper and also outfield player.
             </p>
-            <figure class="video-container">
-              <img src="images/sports/fibo.jpg"  width="330" height='auto' alt="Special participation in ADA">
-              <img src="images/sports/ada.jpg" width="300" height='auto' alt="Fibo-ADA Derby">
-            </figure>
             <div class="skill-icons">
               <p> Social Networks: </p>
               <div class="skill-item">
@@ -503,10 +474,6 @@
               I sporadically play very low performance volleyball with my friends from MatComp, the infamous 'MatVôlei'.
               I enjoy the sport because it is a great way to socialize.
             </p>
-            <figure class="video-container">
-              <img src="images/sports/matvolei.jpg"  width="300" height='auto' alt="Special participation in ADA">
-              <img src="images/sports/volei.jpg" width="300" height='auto' alt="Fibo-ADA Derby">
-            </figure>
             <div class="skill-icons">
               <p> Social Network: </p>
               <div class="skill-item">
@@ -571,6 +538,10 @@
             </div>
           </div>
         </div>
+        <figure class="video-container">
+          <img src="images/sonic.png"  width="200" height='auto'>
+          <img src="images/guitar.png"  width="200" height='auto'>
+        </figure>
     </section>   
 
 
