@@ -238,6 +238,41 @@ body {
     transform: scale(1.1);
 }
 
+/* Language Toggle */
+.lang-toggle-btn {
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    z-index: 1000;
+    transition: background var(--transition), transform var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-family: inherit;
+}
+
+.lang-toggle-btn:hover {
+    transform: scale(1.05);
+    background: var(--secondary);
+    color: var(--bg);
+}
+
+.lang-toggle-btn i {
+    font-size: 0.8rem;
+}
+
+.lang-toggle-btn span {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
 /* Particles */
 #particles-js {
     position: fixed;
