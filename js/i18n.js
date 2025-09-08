@@ -24,7 +24,7 @@ class I18n {
         
         // About section
         'about.title': 'About Me',
-        'about.description': "I'm a Computer Science graduate student at UFMG researching multi-robot perimeter defense at VeRLab DCC-UFMG. Skilled in full-stack development, robotics, and data science. Passionate about digital art, chess, and team sports like futsal and volleyball.",
+        'about.description': "I'm a Computer Science graduate student at DCC-UFMG researching multi-robot perimeter defense at VeRLab. Skilled in full-stack development, robotics, and data science. Passionate about digital art, chess, and team sports like futsal and volleyball.",
         
         // Research section
         'research.title': 'Current Research',
@@ -80,8 +80,8 @@ class I18n {
         
         // About section
         'about.title': 'Sobre Mim',
-        'about.description': 'Sou estudante de pós-graduação em Ciência da Computação na UFMG pesquisando defesa de perímetro multi-robô no VeRLab DCC-UFMG. Especializado em desenvolvimento full-stack, robótica e ciência de dados. Apaixonado por arte digital, xadrez e esportes coletivos como futsal e vôlei.',
-        
+        'about.description': 'Sou estudante de pós-graduação em Ciência da Computação (DCC-UFMG) pesquisando defesa de perímetro multi-robô no VeRLab. Especializado em desenvolvimento full-stack, robótica e ciência de dados. Apaixonado por arte digital, xadrez e esportes coletivos como futsal e vôlei.',
+
         // Research section
         'research.title': 'Pesquisa Atual',
         'research.ai.title': 'Inteligência Artificial',
