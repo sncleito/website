@@ -1,7 +1,7 @@
 // Internationalization system for João Gilberto's website
 class I18n {
   constructor() {
-    this.currentLanguage = localStorage.getItem('language') || 'en';
+    this.currentLanguage = 'en';
     this.translations = {};
     this.init();
   }
@@ -32,12 +32,12 @@ class I18n {
         'research.ai.project': 'Adaptive Team Formation for Perimeter Defense in Multi-Robot Systems (2023-today)',
         'research.ai.description': 'The Perimeter Defense problem is a particular case in the application of multi-robot systems, since we have the presence of adversarial agents, that is, agents that act against the success of the entire mission.',
         'research.ai.funding': 'Funding: CNPq (Brazil).',
-        'research.ai.location': 'Local: DCC - UFMG (Brazil).',
+        'research.ai.location': 'Location: DCC - UFMG (Brazil).',
         'research.cv.title': 'Computer Vision',
         'research.cv.project': 'Computer Vision solution to construction site (2023-today)',
         'research.cv.description': 'The Multiview System enables the monitoring of construction and manufacturing processes on industrial sites using computer vision. This project focuses on investigating techniques, models, and algorithms to develop a system for the automatic semantic labeling of elements identified in point clouds. It aims to create innovative solutions for point cloud analysis.',
         'research.cv.funding': 'Funding: Petrobras (Brazil).',
-        'research.cv.location': 'Local: DCC - UFMG (Brazil).',
+        'research.cv.location': 'Location: DCC - UFMG (Brazil).',
         
         // Technical Skills section
         'skills.title': 'Technical Skills',
@@ -52,18 +52,21 @@ class I18n {
         // Hobbies section
         'hobbies.title': 'Arts & Sports',
         'hobbies.drawing.title': 'Digital Drawing',
-        'hobbies.drawing.description': 'I have been sporadically drawing digitally since 2014. I started with a Wacom Bamboo tablet and later switched to a Wacom Intuos. I use Krita for most of my drawings, but I also use Gimp for some projects. I have been focusing on character design and fan art, but I also enjoy drawing original characters and concepts.',
-        'hobbies.drawing.social': 'Social Networks:',
+        'hobbies.drawing.description': 'I have been sporadically drawing digitally. I use Krita for most of my drawings, but I also use Gimp for some projects. I have been focusing on fan art, but I also enjoy drawing original characters and concepts.',
+        'hobbies.drawing.tools': 'Drawing Tools:',
         'hobbies.chess.title': 'Chess',
-        'hobbies.chess.description': 'I have been playing chess since I was a child. I enjoy playing online on Chess.com and Lichess. I also enjoy watching chess streams and tournaments. I have been studying chess openings and endgames, and I am currently rated around 1200-1300 on Chess.com.',
+        'hobbies.chess.description': 'I\'m a chess hobbyist. I enjoy solving chess puzzles and playing casual games with friends sometimes.',
         'hobbies.chess.platforms': 'Platforms:',
-        'hobbies.sports.title': 'Team Sports',
-        'hobbies.sports.description': 'I enjoy playing team sports, especially futsal and volleyball. I have been playing futsal since I was a teenager and I have been playing volleyball since I was in college. I enjoy the teamwork and strategy involved in these sports.',
-        'hobbies.music.title': 'Music',
-        'hobbies.music.description': 'I enjoy listening to various genres of music, from rock and metal to electronic and classical. I also enjoy discovering new artists and albums. I use Spotify and Last.fm to track my listening habits.',
-        'hobbies.reading.title': 'Reading',
-        'hobbies.reading.description': 'I enjoy reading books, especially science fiction, fantasy, and technical books. I use Skoob to track my reading progress and discover new books.',
-        
+        'hobbies.futsal.title': 'Futsal',
+        'hobbies.futsal.description': 'I am part of the powerful team Fibonapoli φ(c). We participate in the DCC futsal championship,' +
+                                      'we have never won the competition but it is fun to play and socialize. I play as a field player, but I am also the second goalkeeper.',
+        'hobbies.volleyball.title': 'Volleyball',
+        'hobbies.volleyball.description': 'I sporadically play very low performance volleyball with the MatComp mates, the infamous "MatVôlei". I enjoy the sport because it is a great way to socialize.',
+        'hobbies.gym.title': 'Gym',
+        'hobbies.gym.description': 'I try to maintain a healthy lifestyle by going to the gym regularly. A healthy body is a healthy mind.',
+
+        'hobbies.social': 'Social Networks:',
+
         // Language toggle
         'lang.toggle': 'PT',
         'lang.current': 'English'
@@ -105,17 +108,20 @@ class I18n {
         // Hobbies section
         'hobbies.title': 'Artes & Esportes',
         'hobbies.drawing.title': 'Desenho Digital',
-        'hobbies.drawing.description': 'Tenho desenhado digitalmente esporadicamente desde 2014. Comecei com um tablet Wacom Bamboo e depois mudei para um Wacom Intuos. Uso o Krita para a maioria dos meus desenhos, mas também uso o Gimp para alguns projetos. Tenho focado em design de personagens e fan art, mas também gosto de desenhar personagens e conceitos originais.',
-        'hobbies.drawing.social': 'Redes Sociais:',
+        'hobbies.drawing.description': 'Tenho desenhado digitalmente esporadicamente. Comecei com um tablet Wacom Bamboo e depois mudei para um Wacom Intuos. Uso o Krita para a maioria dos meus desenhos, mas também uso o Gimp para alguns projetos. Tenho focado em fanarts, mas também gosto de desenhar personagens e conceitos originais.',
+        'hobbies.drawing.tools': 'Ferramentas de Desenho:',
         'hobbies.chess.title': 'Xadrez',
         'hobbies.chess.description': 'Sou um entusiasta de xadrez. Gosto de resolver quebra-cabeças de xadrez e jogar partidas casuais com amigos às vezes.',
         'hobbies.chess.platforms': 'Redes Sociais:',
-        'hobbies.sports.title': 'Esportes Coletivos',
-        'hobbies.sports.description': 'Gosto de praticar esportes coletivos, especialmente futsal e vôlei. Jogo futsal desde adolescente e vôlei desde a faculdade. Gosto do trabalho em equipe e estratégia envolvidos nesses esportes.',
-        'hobbies.music.title': 'Música',
-        'hobbies.music.description': 'Gosto de ouvir vários gêneros musicais, desde rock e metal até eletrônica e clássica. Também gosto de descobrir novos artistas e álbuns. Uso Spotify e Last.fm para acompanhar meus hábitos de escuta.',
-        'hobbies.reading.title': 'Leitura',
-        'hobbies.reading.description': 'Gosto de ler livros, especialmente ficção científica, fantasia e livros técnicos. Uso o Skoob para acompanhar meu progresso de leitura e descobrir novos livros.',
+        'hobbies.futsal.title': 'Futsal',
+        'hobbies.futsal.description': 'Sou parte da poderosíssima equipe Fibonapoli φ(c). Que participa do campeonato DCC de futsal, ' +
+                                      'nunca vencemos a competição mas é divertido jogar e socializar. Jogo como jogador de linha, mas também sou o segundo goleiro.',
+        'hobbies.volleyball.title': 'Vôlei',
+        'hobbies.volleyball.description': 'Jogo esporadicamente vôlei de baixo desempenho com o pessoal da MatComp, o infame "MatVôlei". Gosto do esporte porque é uma ótima forma de socializar.',
+        'hobbies.gym.title': 'Academia',
+        'hobbies.gym.description': 'Tento também melhorar minha saúde geral. A academia é uma ótima maneira de aliviar o estresse e manter o corpo em forma.',
+
+        'hobbies.social': 'Redes Sociais:',
         
         // Language toggle
         'lang.toggle': 'EN',
@@ -125,7 +131,6 @@ class I18n {
   }
 
   createLanguageToggle() {
-    const header = document.querySelector('.profile-header');
     const langToggle = document.createElement('button');
     langToggle.id = 'lang-toggle';
     langToggle.className = 'lang-toggle-btn';
@@ -186,22 +191,15 @@ class I18n {
     this.updateElement('#research h2', 'research.title');
     this.updateElement('#research .topic:nth-child(1) h4', 'research.ai.title');
     this.updateElement('#research .topic:nth-child(1) h5', 'research.ai.project');
-    
+    this.updateElement('#research .topic:nth-child(1) .topic-content p[name="ai-description"]', 'research.ai.description');
+    this.updateElement('#research .topic:nth-child(1) .topic-content p[name="ai-local"]', 'research.ai.location');
+    this.updateElement('#research .topic:nth-child(1) .topic-content p[name="ai-funding"]', 'research.ai.funding');
+
     this.updateElement('#research .topic:nth-child(2) h4', 'research.cv.title');
     this.updateElement('#research .topic:nth-child(2) h5', 'research.cv.project');
-    
-    // Update research descriptions
-    const aiDescription = document.querySelector('#research .topic:nth-child(1) .topic-content');
-    const cvDescription = document.querySelector('#research .topic:nth-child(2) .topic-content p');
-    if (aiDescription) {
-      const firstTextNode = aiDescription.childNodes[1]; // The text node after h5
-      if (firstTextNode && firstTextNode.nodeType === Node.TEXT_NODE) {
-        firstTextNode.textContent = this.t('research.ai.description');
-      }
-    }
-    if (cvDescription) {
-      cvDescription.textContent = this.t('research.cv.description');
-    }
+    this.updateElement('#research .topic:nth-child(2) .topic-content p[name="cv-description"]', 'research.cv.description');
+    this.updateElement('#research .topic:nth-child(2) .topic-content p[name="cv-local"]', 'research.cv.location');
+    this.updateElement('#research .topic:nth-child(2) .topic-content p[name="cv-funding"]', 'research.cv.funding');
     
     this.updateElement('#technical h2', 'skills.title');
     this.updateElement('#technical .topic:nth-child(1) h4', 'skills.web.title');
@@ -215,26 +213,34 @@ class I18n {
     this.updateElement('#hobbies h2', 'hobbies.title');
     this.updateElement('#hobbies .topic:nth-child(1) h4', 'hobbies.drawing.title');
     this.updateElement('#hobbies .topic:nth-child(1) .topic-content p:first-child', 'hobbies.drawing.description');
-    this.updateElement('#hobbies .topic:nth-child(1) .skill-icons p', 'hobbies.drawing.social');
-    
+    this.updateElement('#hobbies .topic:nth-child(1) .skill-icons p:first-child', 'hobbies.social');
+    this.updateElement('#hobbies .topic:nth-child(1) .skill-icons p[name="drawing-tools"]', 'hobbies.drawing.tools');
+
     // Update chess section
-    this.updateElement('#hobbies .topic:nth-child(4) h4', 'hobbies.chess.title');
-    this.updateElement('#hobbies .topic:nth-child(4) .topic-content p:first-child', 'hobbies.chess.description');
-    this.updateElement('#hobbies .topic:nth-child(4) .skill-icons p', 'hobbies.chess.platforms');
+    this.updateElement('#hobbies .topic:nth-child(6) h4', 'hobbies.chess.title');
+    this.updateElement('#hobbies .topic:nth-child(6) .topic-content p:first-child', 'hobbies.chess.description');
+    this.updateElement('#hobbies .topic:nth-child(6) .skill-icons p', 'hobbies.chess.platforms');
+
+    // Update futsal section
+    this.updateElement('#hobbies .topic:nth-child(3) h4', 'hobbies.futsal.title');
+    this.updateElement('#hobbies .topic:nth-child(3) .topic-content p:first-child', 'hobbies.futsal.description');
+    this.updateElement('#hobbies .topic:nth-child(3) .skill-icons p', 'hobbies.social');
+
+    // Update volleyball section
+    this.updateElement('#hobbies .topic:nth-child(4) h4', 'hobbies.volleyball.title');
+    this.updateElement('#hobbies .topic:nth-child(4) .topic-content p:first-child', 'hobbies.volleyball.description');
+    this.updateElement('#hobbies .topic:nth-child(4) .skill-icons p', 'hobbies.social');
+
+    // Update gym section
+    this.updateElement('#hobbies .topic:nth-child(5) h4', 'hobbies.gym.title');
+    this.updateElement('#hobbies .topic:nth-child(5) .topic-content p:first-child', 'hobbies.gym.description');
+    this.updateElement('#hobbies .topic:nth-child(5) .skill-icons p', 'hobbies.social');
   }
 
-  updateElement(selector, translationKey, preserveHTML = false) {
+  updateElement(selector, translationKey) {
     const element = document.querySelector(selector);
     if (element) {
-      if (preserveHTML) {
-        // For elements that need to preserve some HTML structure
-        const translation = this.t(translationKey);
-        if (selector.includes('research.ai.description')) {
-          element.innerHTML = translation + element.innerHTML.substring(element.innerHTML.indexOf('<p>'));
-        }
-      } else {
-        element.textContent = this.t(translationKey);
-      }
+      element.textContent = this.t(translationKey);
     }
   }
 }
@@ -243,4 +249,3 @@ class I18n {
 document.addEventListener('DOMContentLoaded', () => {
   window.i18n = new I18n();
 });
-
